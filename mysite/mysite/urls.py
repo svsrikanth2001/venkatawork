@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index),
     url(r'^booklist/',views.booklist)
+    url(r'^list_chapters/',views.list_chapters)
 ]

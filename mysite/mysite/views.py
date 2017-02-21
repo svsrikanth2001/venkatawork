@@ -10,6 +10,7 @@ def booklist(request):
     all_books = []
     for book in TblBook.objects.all():
         all_books.append({
+            'id':str(book.id),
             'name': book.BookName
         })
     return JsonResponse({'books': all_books})

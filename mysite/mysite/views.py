@@ -15,12 +15,12 @@ def booklist(request):
     return JsonResponse({'books': all_books})
 
 def list_chapters(request):
-    #book_id = request.GET.get('book_id', None)
+    book_id = request.GET.get('book_id', None)
     #if not book_id:
         #return JsonResponse({'message': 'book_id not provided'})
 
     try:
-        chapters = TblBookReview.objects.filter(tblbook_id=int(1)).order_by('id')
+        chapters = TblBookReview.objects.filter(tblbook_id=int(book_id)).order_by('id')
         all_chapters = []
         for chapter in chapters:
             all_chapters.append({

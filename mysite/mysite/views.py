@@ -16,8 +16,8 @@ def booklist(request):
 
 def list_chapters(request):
     #book_id = request.GET.get('book_id', None)
-    if not book_id:
-        return JsonResponse({'message': 'book_id not provided'})
+    #if not book_id:
+        #return JsonResponse({'message': 'book_id not provided'})
 
     try:
         chapters = TblBookReview.objects.filter(tblbook_id=int(1)).order_by('id')

@@ -25,7 +25,7 @@ def list_chapters(request):
         all_chapters = []
         for chapter in chapters:
             all_chapters.append({
-                'chapter': str(chapter.chapter),
+                'chapter': 'Chapert1'+ str(chapter.chapter) ,
                 'description': chapter.desciption
             })
 

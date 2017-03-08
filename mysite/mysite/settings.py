@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '--@5zcl1o(ar2*lr-kc!lrie7wg=)l#7xjrx^%x#zat-5nk6j&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mybookreview.herokuapp.com']
 
